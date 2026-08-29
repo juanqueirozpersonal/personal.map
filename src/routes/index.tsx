@@ -166,7 +166,7 @@ function Hero() {
             <img
               src={juan.url}
               alt="Juan Queiroz, personal trainer, de braços cruzados em fundo preto"
-              className="mx-auto h-[22rem] w-auto object-contain object-bottom contrast-[1.08] brightness-[0.98] sm:h-[30rem] lg:h-full lg:max-h-screen lg:w-full"
+              className="mx-auto h-[16.5rem] w-auto object-contain object-bottom contrast-[1.08] brightness-[0.98] sm:h-[30rem] lg:h-full lg:max-h-screen lg:w-full"
               width={1078}
               height={1437}
               fetchPriority="high"
