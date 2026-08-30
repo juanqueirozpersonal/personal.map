@@ -219,7 +219,7 @@ import testimonial5 from "@/assets/photo-output-5.jpeg.asset.json";
 
 export const TESTIMONIALS = [
   {
-    text: "Simplesmente o melhor! Paciente, prestativo, sempre monta os treinos de acordo com o que nosso corpo precisa.",
+    text: "Excelente profissional! Entende muito do que faz, monta os treinos de acordo com meu objetivo e respeita o meu ritmo. Está sempre dando suporte, incentivando e ajudando a evoluir. Super recomendo!",
     author: "Aluno PEMAP",
     image: testimonial1,
   },
