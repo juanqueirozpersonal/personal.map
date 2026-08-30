@@ -138,8 +138,10 @@ function Hero() {
           </p>
           <p className="mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground">
             Treinamento individualizado, baseado em conhecimento científico e adaptado às
-            necessidades, limitações e objetivos de cada pessoa.
+            necessidades, limitações e objetivos de cada pessoa. Comece hoje e, em apenas
+            3 meses, sinta a transformação no seu bem-estar.
           </p>
+
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a
