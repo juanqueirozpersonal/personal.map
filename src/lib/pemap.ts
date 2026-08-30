@@ -210,3 +210,22 @@ export const FAQ = [
     a: "O treino é feito com base na sua condição e disponibilidade de tempo. Em alguns casos, dependendo da sua situação, existem recomendações científicas relacionadas a uma frequência mínima de treinamento para a efetividade do programa.",
   },
 ];
+
+export const TESTIMONIALS = [
+  {
+    text: "Simplesmente o melhor! Paciente, prestativo, sempre monta os treinos do que nosso corpo precisa.",
+    author: "Aluno PEMAP",
+  },
+  {
+    text: "Excelente profissional! Entende muito do que faz, monta os treinos de acordo com meu objetivo e respeita o meu ritmo. Está sempre dando suporte, incentivando e ajudando a evoluir. Super recomendo!",
+    author: "Aluno PEMAP",
+  },
+  {
+    text: "O Juan é um personal muito atencioso e dedicado. Ele acompanha de perto cada treino, sempre me orienta e corrige quando precisa. Gosto muito da forma como ele trabalha e de como está sempre focado na minha evolução. Estou muito satisfeita com o acompanhamento e com os resultados até agora!",
+    author: "Aluna PEMAP",
+  },
+  {
+    text: "O Juan é um profissional muito atento, antenado e que está constantemente se atualizando. Logo no dia em que me conheceu, ele percebeu que eu tinha uma questãozinha na coluna. Ali já deu para perceber o quanto ele observa o aluno e entende do que está fazendo. Durante os treinos presenciais, ele presta atenção aos desconfortos e, quando percebe alguma dificuldade, já adapta o exercício para que a pessoa consiga treinar da melhor maneira possível, respeitando o próprio corpo. Ele manda mensagem praticamente todos os dias, incentiva, cobra com carinho e não deixa a gente esquecer que precisa se movimentar. É um profissional que demonstra cuidado, presença e comprometimento com o aluno, e isso faz muita diferença.",
+    author: "Aluna PEMAP",
+  },
+];
