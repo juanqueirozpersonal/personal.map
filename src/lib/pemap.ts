@@ -215,10 +215,11 @@ import testimonial1 from "@/assets/photo-output.jpeg.asset.json";
 import testimonial2 from "@/assets/photo-output-2.jpeg.asset.json";
 import testimonial3 from "@/assets/photo-output-3.jpeg.asset.json";
 import testimonial4 from "@/assets/photo-output.png.asset.json";
+import testimonial5 from "@/assets/photo-output-5.jpeg.asset.json";
 
 export const TESTIMONIALS = [
   {
-    text: "Simplesmente o melhor! Paciente, prestativo, sempre monta os treinos do que nosso corpo precisa.",
+    text: "Simplesmente o melhor! Paciente, prestativo, sempre monta os treinos de acordo com o que nosso corpo precisa.",
     author: "Aluno PEMAP",
     image: testimonial1,
   },
@@ -236,5 +237,10 @@ export const TESTIMONIALS = [
     text: "O Juan é um profissional muito atento, antenado e que está constantemente se atualizando. Logo no dia em que me conheceu, ele percebeu que eu tinha uma questãozinha na coluna. Ali já deu para perceber o quanto ele observa o aluno e entende do que está fazendo. Durante os treinos presenciais, ele presta atenção aos desconfortos e, quando percebe alguma dificuldade, já adapta o exercício para que a pessoa consiga treinar da melhor maneira possível, respeitando o próprio corpo. Ele manda mensagem praticamente todos os dias, incentiva, cobra com carinho e não deixa a gente esquecer que precisa se movimentar. É um profissional que demonstra cuidado, presença e comprometimento com o aluno, e isso faz muita diferença.",
     author: "Aluna PEMAP",
     image: testimonial4,
+  },
+  {
+    text: "O Juan é um excelente profissional, técnico, dedicado e atencioso, sempre atento aos detalhes durante os treinos e preocupado em garantir a execução correta dos exercícios. Extremamente comprometido com a evolução dos alunos, acompanhando de perto a nossa evolução, para conseguirmos os melhores resultados.",
+    author: "Aluno PEMAP",
+    image: testimonial5,
   },
 ];
