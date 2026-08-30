@@ -560,21 +560,21 @@ function Testimonials() {
             RESULTADOS QUE VÃO ALÉM DO ESPELHO.
           </h2>
           <p className="mt-6 text-sm text-muted-foreground">
-            Esta seção está preparada para receber depoimentos reais de alunos.
+            Relatos de alunos que acompanham o trabalho de perto.
           </p>
         </Reveal>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-3">
-          {[0, 1, 2].map((i) => (
-            <Reveal key={i} delay={i * 80}>
-              <div className="flex h-52 flex-col justify-end rounded-lg border border-dashed border-border p-7">
-                <span className="text-xs tracking-[0.24em] text-muted-foreground uppercase">
-                  Espaço reservado
-                </span>
-                <p className="mt-2 text-sm text-muted-foreground/70">
-                  Depoimento a ser publicado.
-                </p>
-              </div>
+        <div className="mt-12 grid gap-5 md:grid-cols-2">
+          {TESTIMONIALS.map((t, i) => (
+            <Reveal key={t.text} delay={i * 80}>
+              <figure className="flex h-full flex-col justify-between rounded-lg border border-border bg-surface p-7">
+                <blockquote className="text-sm leading-relaxed text-foreground/90">
+                  “{t.text}”
+                </blockquote>
+                <figcaption className="mt-6 text-xs tracking-[0.24em] text-silver uppercase">
+                  {t.author}
+                </figcaption>
+              </figure>
             </Reveal>
           ))}
         </div>
@@ -582,6 +582,8 @@ function Testimonials() {
     </section>
   );
 }
+
+
 
 function Faq() {
   return (
