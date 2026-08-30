@@ -566,14 +566,19 @@ function Testimonials() {
           </p>
         </Reveal>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2">
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {TESTIMONIALS.map((t, i) => (
             <Reveal key={t.text} delay={i * 80}>
-              <figure className="flex h-full flex-col justify-between rounded-lg border border-border bg-surface p-7">
-                <blockquote className="text-sm leading-relaxed text-foreground/90">
-                  “{t.text}”
-                </blockquote>
-                <figcaption className="mt-6 text-xs tracking-[0.24em] text-silver uppercase">
+              <figure className="flex h-full flex-col rounded-lg border border-border bg-surface p-3">
+                <div className="overflow-hidden rounded-md border border-border bg-background">
+                  <img
+                    src={t.image.url}
+                    alt={`Depoimento de ${t.author}`}
+                    className="w-full object-contain"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption className="mt-4 text-center text-xs tracking-[0.24em] text-silver uppercase">
                   {t.author}
                 </figcaption>
               </figure>
