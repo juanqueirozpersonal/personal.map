@@ -27,6 +27,8 @@ import {
   SERVICES,
   SPECIALIZATIONS,
   STEPS,
+  TESTIMONIALS,
+
   WHATSAPP_URL,
 } from "@/lib/pemap";
 
