@@ -566,7 +566,7 @@ function Testimonials() {
           </p>
         </Reveal>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {TESTIMONIALS.map((t, i) => (
             <Reveal key={t.text} delay={i * 80}>
               <figure className="flex h-full flex-col rounded-lg border border-border bg-surface p-3">
