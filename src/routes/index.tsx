@@ -553,9 +553,6 @@ function Testimonials() {
           <h2 className="mt-6 text-3xl font-extrabold sm:text-4xl">
             RESULTADOS QUE VÃO ALÉM DO ESPELHO.
           </h2>
-          <p className="mt-6 text-sm text-muted-foreground">
-            Relatos de alunos que acompanham o trabalho de perto.
-          </p>
         </Reveal>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
