@@ -66,15 +66,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex shrink-0 items-center gap-3">
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-silver hidden !px-5 !py-3 !text-[0.7rem] sm:inline-flex"
-          >
-            Quero mudar de vida!
-          </a>
+        <div className="flex shrink-0 items-center">
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
