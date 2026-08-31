@@ -450,21 +450,31 @@ function HowItWorks() {
           </h2>
         </Reveal>
 
-        <ol className="mt-16 border-l border-border">
-          {STEPS.map((step, i) => (
-            <Reveal key={step.n} delay={i * 70} as="li" className="relative pb-12 pl-8">
-              <span
-                aria-hidden
-                className="absolute top-2 -left-[3px] h-1.5 w-1.5 rounded-full bg-silver"
-              />
-              <span className="text-sm text-silver tabular-nums">{step.n}</span>
-              <h3 className="mt-2 text-lg font-bold tracking-wide uppercase">
-                {step.title}
-              </h3>
-              <p className="mt-2 max-w-xl text-sm text-muted-foreground">{step.text}</p>
-            </Reveal>
+        <div className="mt-12 grid gap-x-10 gap-y-4 sm:grid-cols-2 lg:mt-14">
+          {[STEPS.slice(0, 3), STEPS.slice(3)].map((group, gi) => (
+            <ol key={gi} className="divide-y divide-border border-y border-border">
+              {group.map((step, i) => (
+                <Reveal
+                  key={step.n}
+                  delay={(gi * 3 + i) * 60}
+                  as="li"
+                  className="flex gap-4 py-5"
+                >
+                  <span className="shrink-0 text-sm text-silver tabular-nums">
+                    {step.n}
+                  </span>
+                  <div className="min-w-0">
+                    <h3 className="text-sm font-bold tracking-wide uppercase sm:text-base">
+                      {step.title}
+                    </h3>
+                    <p className="mt-1.5 text-sm text-muted-foreground">{step.text}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </ol>
           ))}
-        </ol>
+        </div>
+
       </div>
     </section>
   );
