@@ -518,26 +518,6 @@ function Methodology() {
           ))}
         </div>
 
-        <Reveal className="mt-16">
-          <div className="border border-border bg-surface p-7 sm:p-10">
-            <span className="section-label">Diferencial</span>
-            <h3 className="mt-5 text-2xl font-extrabold sm:text-3xl">
-              EXERCÍCIO COMO <span className="text-silver">FERRAMENTA DE SAÚDE</span>
-            </h3>
-            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-              O treinamento é planejado para ir além da estética, utilizando o exercício
-              físico como ferramenta para promover saúde, funcionalidade e qualidade de
-              vida, respeitando as particularidades e necessidades de cada pessoa.
-            </p>
-            <div className="mt-9 grid gap-px overflow-hidden border border-border bg-border sm:grid-cols-3">
-              {["Saúde", "Funcionalidade", "Qualidade de vida"].map((item) => (
-                <div key={item} className="bg-background px-6 py-7">
-                  <p className="text-xs tracking-[0.26em] text-silver uppercase">{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </Reveal>
       </div>
     </section>
   );
