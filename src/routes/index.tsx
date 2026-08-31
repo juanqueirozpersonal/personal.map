@@ -89,7 +89,6 @@ function Index() {
         <Services />
         <HowItWorks />
         <Methodology />
-        <Differential />
         <Testimonials />
         <Faq />
         <FinalCta />
