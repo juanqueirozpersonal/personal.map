@@ -491,8 +491,17 @@ function Methodology() {
           </h2>
           <p className="mt-6 text-sm leading-relaxed text-muted-foreground sm:text-base">
             Cada pessoa possui uma história, uma condição, uma rotina e necessidades
-            diferentes. Por isso, o treinamento precisa ser pensado para a pessoa — e não a
+            diferentes. Por isso, o treinamento precisa ser pensado para a pessoa, e não a
             pessoa adaptada a um treino pronto.
+          </p>
+          <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
+            A prescrição do exercício deve considerar as características individuais, as
+            necessidades, limitações, objetivos e realidade de cada pessoa.
+          </p>
+          <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
+            O exercício físico pode ser utilizado como uma ferramenta de saúde para
+            promover mudanças de dentro para fora, contribuindo para a melhora da saúde,
+            funcionalidade e qualidade de vida.
           </p>
         </Reveal>
 
@@ -511,50 +520,30 @@ function Methodology() {
         </div>
 
         <Reveal className="mt-16">
-          <div className="hairline" />
-          <p className="mt-10 text-xl leading-snug font-bold sm:text-3xl">
-            NÃO EXISTE UM TREINO PERFEITO PARA TODO MUNDO.
-            <br />
-            <span className="text-silver-gradient">
-              EXISTE O TREINAMENTO ADEQUADO PARA VOCÊ.
-            </span>
-          </p>
-        </Reveal>
-      </div>
-    </section>
-  );
-}
-
-function Differential() {
-  return (
-    <section className="border-t border-border bg-surface">
-      <div className="mx-auto max-w-5xl px-5 py-24 lg:px-10 lg:py-32">
-        <Reveal>
-          <span className="section-label">Diferencial</span>
-          <h2 className="mt-6 text-3xl font-extrabold sm:text-4xl">
-            O QUE TORNA MEU TRABALHO DIFERENTE?
-          </h2>
-          <p className="mt-10 text-lg leading-relaxed text-muted-foreground sm:text-xl">
-            “Um Personal Trainer comum treina o seu corpo para mudar por fora.”
-          </p>
-          <p className="mt-6 text-base leading-relaxed sm:text-lg">
-            “Eu, além de ter especialização para prescrever exercícios para pessoas com
-            problemas de saúde e condições atípicas, utilizo o exercício físico como
-            ferramenta de saúde para transformar como você funciona por dentro, com a
-            máxima segurança que a sua condição exige.”
-          </p>
-          <div className="mt-12 grid gap-px overflow-hidden border border-border bg-border sm:grid-cols-3">
-            {["Saúde", "Funcionalidade", "Qualidade de vida"].map((item) => (
-              <div key={item} className="bg-background px-6 py-8">
-                <p className="text-xs tracking-[0.26em] text-silver uppercase">{item}</p>
-              </div>
-            ))}
+          <div className="border border-border bg-surface p-7 sm:p-10">
+            <span className="section-label">Diferencial</span>
+            <h3 className="mt-5 text-2xl font-extrabold sm:text-3xl">
+              EXERCÍCIO COMO <span className="text-silver">FERRAMENTA DE SAÚDE</span>
+            </h3>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+              O treinamento é planejado para ir além da estética, utilizando o exercício
+              físico como ferramenta para promover saúde, funcionalidade e qualidade de
+              vida, respeitando as particularidades e necessidades de cada pessoa.
+            </p>
+            <div className="mt-9 grid gap-px overflow-hidden border border-border bg-border sm:grid-cols-3">
+              {["Saúde", "Funcionalidade", "Qualidade de vida"].map((item) => (
+                <div key={item} className="bg-background px-6 py-7">
+                  <p className="text-xs tracking-[0.26em] text-silver uppercase">{item}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </Reveal>
       </div>
     </section>
   );
 }
+
 
 function Testimonials() {
   return (
