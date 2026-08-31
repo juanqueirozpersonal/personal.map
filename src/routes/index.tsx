@@ -277,7 +277,7 @@ function Education() {
     <section className="border-t border-border">
       <div className="mx-auto max-w-7xl px-5 py-24 lg:px-10 lg:py-28">
         <Reveal>
-          <span className="section-label">Credenciais</span>
+          <span className="section-label">Formação e especializações</span>
           <h2 className="mt-6 text-3xl font-extrabold sm:text-4xl">
             FORMAÇÃO E ESPECIALIZAÇÕES
           </h2>
