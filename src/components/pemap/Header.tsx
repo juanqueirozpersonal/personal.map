@@ -32,22 +32,27 @@ export function Header() {
           : "border-b border-transparent bg-transparent",
       )}
     >
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-10">
-        <a href="#inicio" className="flex items-center gap-3" aria-label="PEMAP — início">
+      <div className="mx-auto grid h-20 max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-5 lg:px-10">
+        <a
+          href="#inicio"
+          className="flex min-w-0 items-center gap-2.5 sm:gap-3"
+          aria-label="PEMAP — início"
+        >
           <img
             src={logo.url}
             alt="Logo oficial PEMAP"
-            className="h-11 w-11 object-contain lg:h-12 lg:w-12"
+            className="h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11 lg:h-12 lg:w-12"
             width={48}
             height={48}
           />
-          <span className="hidden text-[0.7rem] leading-tight tracking-[0.26em] text-muted-foreground sm:block">
-            JUAN QUEIROZ
-            <span className="block text-[0.6rem] tracking-[0.3em] text-silver">
+          <span className="min-w-0 text-[0.62rem] leading-tight tracking-[0.18em] text-muted-foreground sm:text-[0.7rem] sm:tracking-[0.26em]">
+            <span className="block truncate">JUAN QUEIROZ</span>
+            <span className="block truncate text-[0.55rem] tracking-[0.2em] text-silver sm:text-[0.6rem] sm:tracking-[0.3em]">
               PERSONAL TRAINER
             </span>
           </span>
         </a>
+
 
         <nav className="hidden items-center gap-6 xl:flex" aria-label="Navegação principal">
           {NAV.map((item) => (
@@ -61,7 +66,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex shrink-0 items-center gap-3">
           <a
             href={WHATSAPP_URL}
             target="_blank"

@@ -89,7 +89,6 @@ function Index() {
         <Services />
         <HowItWorks />
         <Methodology />
-        <Differential />
         <Testimonials />
         <Faq />
         <FinalCta />
@@ -205,24 +204,18 @@ function Impact() {
   return (
     <section className="mx-auto max-w-5xl px-5 py-24 lg:px-10 lg:py-32">
       <Reveal>
-        <p className="text-xl leading-relaxed text-muted-foreground sm:text-2xl">
-          “Um Personal Trainer comum treina o seu corpo para mudar por fora.”
-        </p>
-        <p className="mt-8 text-2xl leading-snug font-bold sm:text-4xl">
-          Eu utilizo o exercício físico como{" "}
-          <span className="text-silver-gradient">ferramenta de saúde</span> para
-          transformar como você funciona por dentro.
+        <div className="hairline" />
+        <p className="mt-10 text-2xl leading-snug font-bold sm:text-4xl">
+          O EXERCÍCIO FÍSICO COMO FERRAMENTA PARA TRANSFORMAR SEU FUNCIONAMENTO DE{" "}
+          <span className="text-silver">DENTRO PARA FORA</span>, PROMOVENDO SAÚDE,
+          FUNCIONALIDADE E QUALIDADE DE VIDA.
         </p>
         <div className="hairline mt-12" />
-        <div className="mt-8 flex flex-wrap gap-x-10 gap-y-4 text-xs tracking-[0.3em] uppercase">
-          <span className="text-silver">Saúde</span>
-          <span className="text-silver">Funcionalidade</span>
-          <span className="text-silver">Qualidade de vida</span>
-        </div>
       </Reveal>
     </section>
   );
 }
+
 
 function About() {
   return (
@@ -283,7 +276,7 @@ function Education() {
     <section className="border-t border-border">
       <div className="mx-auto max-w-7xl px-5 py-24 lg:px-10 lg:py-28">
         <Reveal>
-          <span className="section-label">Credenciais</span>
+          <span className="section-label">Formação e especializações</span>
           <h2 className="mt-6 text-3xl font-extrabold sm:text-4xl">
             FORMAÇÃO E ESPECIALIZAÇÕES
           </h2>
@@ -456,21 +449,31 @@ function HowItWorks() {
           </h2>
         </Reveal>
 
-        <ol className="mt-16 border-l border-border">
-          {STEPS.map((step, i) => (
-            <Reveal key={step.n} delay={i * 70} as="li" className="relative pb-12 pl-8">
-              <span
-                aria-hidden
-                className="absolute top-2 -left-[3px] h-1.5 w-1.5 rounded-full bg-silver"
-              />
-              <span className="text-sm text-silver tabular-nums">{step.n}</span>
-              <h3 className="mt-2 text-lg font-bold tracking-wide uppercase">
-                {step.title}
-              </h3>
-              <p className="mt-2 max-w-xl text-sm text-muted-foreground">{step.text}</p>
-            </Reveal>
+        <div className="mt-12 grid gap-x-10 gap-y-4 sm:grid-cols-2 lg:mt-14">
+          {[STEPS.slice(0, 3), STEPS.slice(3)].map((group, gi) => (
+            <ol key={gi} className="divide-y divide-border border-y border-border">
+              {group.map((step, i) => (
+                <Reveal
+                  key={step.n}
+                  delay={(gi * 3 + i) * 60}
+                  as="li"
+                  className="flex gap-4 py-5"
+                >
+                  <span className="shrink-0 text-sm text-silver tabular-nums">
+                    {step.n}
+                  </span>
+                  <div className="min-w-0">
+                    <h3 className="text-sm font-bold tracking-wide uppercase sm:text-base">
+                      {step.title}
+                    </h3>
+                    <p className="mt-1.5 text-sm text-muted-foreground">{step.text}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </ol>
           ))}
-        </ol>
+        </div>
+
       </div>
     </section>
   );
@@ -487,8 +490,17 @@ function Methodology() {
           </h2>
           <p className="mt-6 text-sm leading-relaxed text-muted-foreground sm:text-base">
             Cada pessoa possui uma história, uma condição, uma rotina e necessidades
-            diferentes. Por isso, o treinamento precisa ser pensado para a pessoa — e não a
+            diferentes. Por isso, o treinamento precisa ser pensado para a pessoa, e não a
             pessoa adaptada a um treino pronto.
+          </p>
+          <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
+            A prescrição do exercício deve considerar as características individuais, as
+            necessidades, limitações, objetivos e realidade de cada pessoa.
+          </p>
+          <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
+            O exercício físico pode ser utilizado como uma ferramenta de saúde para
+            promover mudanças de dentro para fora, contribuindo para a melhora da saúde,
+            funcionalidade e qualidade de vida.
           </p>
         </Reveal>
 
@@ -507,50 +519,30 @@ function Methodology() {
         </div>
 
         <Reveal className="mt-16">
-          <div className="hairline" />
-          <p className="mt-10 text-xl leading-snug font-bold sm:text-3xl">
-            NÃO EXISTE UM TREINO PERFEITO PARA TODO MUNDO.
-            <br />
-            <span className="text-silver-gradient">
-              EXISTE O TREINAMENTO ADEQUADO PARA VOCÊ.
-            </span>
-          </p>
-        </Reveal>
-      </div>
-    </section>
-  );
-}
-
-function Differential() {
-  return (
-    <section className="border-t border-border bg-surface">
-      <div className="mx-auto max-w-5xl px-5 py-24 lg:px-10 lg:py-32">
-        <Reveal>
-          <span className="section-label">Diferencial</span>
-          <h2 className="mt-6 text-3xl font-extrabold sm:text-4xl">
-            O QUE TORNA MEU TRABALHO DIFERENTE?
-          </h2>
-          <p className="mt-10 text-lg leading-relaxed text-muted-foreground sm:text-xl">
-            “Um Personal Trainer comum treina o seu corpo para mudar por fora.”
-          </p>
-          <p className="mt-6 text-base leading-relaxed sm:text-lg">
-            “Eu, além de ter especialização para prescrever exercícios para pessoas com
-            problemas de saúde e condições atípicas, utilizo o exercício físico como
-            ferramenta de saúde para transformar como você funciona por dentro, com a
-            máxima segurança que a sua condição exige.”
-          </p>
-          <div className="mt-12 grid gap-px overflow-hidden border border-border bg-border sm:grid-cols-3">
-            {["Saúde", "Funcionalidade", "Qualidade de vida"].map((item) => (
-              <div key={item} className="bg-background px-6 py-8">
-                <p className="text-xs tracking-[0.26em] text-silver uppercase">{item}</p>
-              </div>
-            ))}
+          <div className="border border-border bg-surface p-7 sm:p-10">
+            <span className="section-label">Diferencial</span>
+            <h3 className="mt-5 text-2xl font-extrabold sm:text-3xl">
+              EXERCÍCIO COMO <span className="text-silver">FERRAMENTA DE SAÚDE</span>
+            </h3>
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+              O treinamento é planejado para ir além da estética, utilizando o exercício
+              físico como ferramenta para promover saúde, funcionalidade e qualidade de
+              vida, respeitando as particularidades e necessidades de cada pessoa.
+            </p>
+            <div className="mt-9 grid gap-px overflow-hidden border border-border bg-border sm:grid-cols-3">
+              {["Saúde", "Funcionalidade", "Qualidade de vida"].map((item) => (
+                <div key={item} className="bg-background px-6 py-7">
+                  <p className="text-xs tracking-[0.26em] text-silver uppercase">{item}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </Reveal>
       </div>
     </section>
   );
 }
+
 
 function Testimonials() {
   return (
@@ -561,14 +553,11 @@ function Testimonials() {
           <h2 className="mt-6 text-3xl font-extrabold sm:text-4xl">
             RESULTADOS QUE VÃO ALÉM DO ESPELHO.
           </h2>
-          <p className="mt-6 text-sm text-muted-foreground">
-            Relatos de alunos que acompanham o trabalho de perto.
-          </p>
         </Reveal>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {TESTIMONIALS.map((t, i) => (
-            <Reveal key={t.text} delay={i * 80}>
+            <Reveal key={i} delay={i * 80}>
               <figure className="flex h-full flex-col rounded-lg border border-border bg-surface p-3">
                 <div className="overflow-hidden rounded-md border border-border bg-background">
                   <img
@@ -657,7 +646,7 @@ function Contact() {
     { label: "WhatsApp", value: PHONE_DISPLAY },
     { label: "Instagram", value: INSTAGRAM_HANDLE },
     { label: "E-mail", value: EMAIL },
-    { label: "Atendimento presencial", value: "Estado de São Paulo" },
+    { label: "Atendimento presencial", value: "Cidade de São Paulo" },
     { label: "Atendimento domiciliar", value: "Sim" },
     { label: "Atendimento online", value: "Sim" },
   ];

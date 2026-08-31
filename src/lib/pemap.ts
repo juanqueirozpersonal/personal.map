@@ -178,11 +178,28 @@ export const STEPS = [
 ];
 
 export const PILLARS = [
-  { n: "01", title: "Avaliação", text: "Compreender suas necessidades." },
-  { n: "02", title: "Individualização", text: "Adaptar o treinamento à pessoa." },
-  { n: "03", title: "Ciência", text: "Utilizar conhecimentos científicos na prescrição." },
-  { n: "04", title: "Acompanhamento", text: "Monitorar a evolução e realizar ajustes." },
+  {
+    n: "01",
+    title: "Avaliação",
+    text: "Compreender as necessidades e características individuais para orientar o planejamento do treinamento.",
+  },
+  {
+    n: "02",
+    title: "Individualização",
+    text: "Adaptar o treinamento às condições, objetivos, limitações e disponibilidade de cada pessoa.",
+  },
+  {
+    n: "03",
+    title: "Ciência",
+    text: "Aplicar conhecimentos científicos na avaliação e prescrição do exercício.",
+  },
+  {
+    n: "04",
+    title: "Acompanhamento",
+    text: "Monitorar a evolução e realizar os ajustes necessários ao longo do processo.",
+  },
 ];
+
 
 export const FAQ = [
   {
