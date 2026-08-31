@@ -646,7 +646,7 @@ function Contact() {
     { label: "WhatsApp", value: PHONE_DISPLAY },
     { label: "Instagram", value: INSTAGRAM_HANDLE },
     { label: "E-mail", value: EMAIL },
-    { label: "Atendimento presencial", value: "Estado de São Paulo" },
+    { label: "Atendimento presencial", value: "Cidade de São Paulo" },
     { label: "Atendimento domiciliar", value: "Sim" },
     { label: "Atendimento online", value: "Sim" },
   ];
