@@ -205,24 +205,18 @@ function Impact() {
   return (
     <section className="mx-auto max-w-5xl px-5 py-24 lg:px-10 lg:py-32">
       <Reveal>
-        <p className="text-xl leading-relaxed text-muted-foreground sm:text-2xl">
-          “Um Personal Trainer comum treina o seu corpo para mudar por fora.”
-        </p>
-        <p className="mt-8 text-2xl leading-snug font-bold sm:text-4xl">
-          Eu utilizo o exercício físico como{" "}
-          <span className="text-silver-gradient">ferramenta de saúde</span> para
-          transformar como você funciona por dentro.
+        <div className="hairline" />
+        <p className="mt-10 text-2xl leading-snug font-bold sm:text-4xl">
+          O EXERCÍCIO FÍSICO COMO FERRAMENTA PARA TRANSFORMAR SEU FUNCIONAMENTO DE{" "}
+          <span className="text-silver">DENTRO PARA FORA</span>, PROMOVENDO SAÚDE,
+          FUNCIONALIDADE E QUALIDADE DE VIDA.
         </p>
         <div className="hairline mt-12" />
-        <div className="mt-8 flex flex-wrap gap-x-10 gap-y-4 text-xs tracking-[0.3em] uppercase">
-          <span className="text-silver">Saúde</span>
-          <span className="text-silver">Funcionalidade</span>
-          <span className="text-silver">Qualidade de vida</span>
-        </div>
       </Reveal>
     </section>
   );
 }
+
 
 function About() {
   return (
