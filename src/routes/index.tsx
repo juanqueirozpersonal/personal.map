@@ -102,13 +102,13 @@ function Index() {
 
 function Hero() {
   return (
-    <section id="inicio" className="relative overflow-hidden pt-28 lg:pt-20">
+    <section id="inicio" className="relative overflow-hidden pt-24 lg:pt-16">
       <div
         aria-hidden
         className="pointer-events-none absolute top-1/4 -right-40 h-[38rem] w-[38rem] rounded-full opacity-[0.07] blur-3xl"
         style={{ background: "radial-gradient(circle, #ffffff 0%, transparent 70%)" }}
       />
-      <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 pb-16 lg:min-h-screen lg:grid-cols-[45fr_55fr] lg:gap-6 lg:px-10 lg:pb-0">
+      <div className="mx-auto grid max-w-7xl items-center gap-8 px-5 pb-12 lg:min-h-screen lg:grid-cols-[45fr_55fr] lg:gap-6 lg:px-10 lg:pb-0">
         <Reveal className="order-2 lg:order-1">
           <div className="flex items-center gap-4">
             <img
@@ -202,15 +202,15 @@ function AuthorityBar() {
 
 function Impact() {
   return (
-    <section className="mx-auto max-w-5xl px-5 py-24 lg:px-10 lg:py-32">
+    <section className="mx-auto max-w-5xl px-5 py-16 lg:px-10 lg:py-24">
       <Reveal>
         <div className="hairline" />
-        <p className="mt-10 text-2xl leading-snug font-bold sm:text-4xl">
+        <p className="mt-8 text-2xl leading-snug font-bold sm:text-4xl">
           O EXERCÍCIO FÍSICO COMO FERRAMENTA PARA TRANSFORMAR SEU FUNCIONAMENTO DE{" "}
           <span className="text-silver">DENTRO PARA FORA</span>, PROMOVENDO SAÚDE,
           FUNCIONALIDADE E QUALIDADE DE VIDA.
         </p>
-        <div className="hairline mt-12" />
+        <div className="hairline mt-10" />
       </Reveal>
     </section>
   );
@@ -220,7 +220,7 @@ function Impact() {
 function About() {
   return (
     <section id="sobre" className="border-t border-border bg-surface">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-24 lg:grid-cols-2 lg:px-10 lg:py-32">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-18 lg:grid-cols-2 lg:px-10 lg:py-26">
         <Reveal>
           <span className="section-label">Sobre mim</span>
           <h2 className="mt-6 text-3xl leading-tight font-extrabold sm:text-4xl">
@@ -274,7 +274,7 @@ function About() {
 function Education() {
   return (
     <section className="border-t border-border">
-      <div className="mx-auto max-w-7xl px-5 py-24 lg:px-10 lg:py-28">
+      <div className="mx-auto max-w-7xl px-5 py-18 lg:px-10 lg:py-24">
         <Reveal>
           <span className="section-label">Formação e especializações</span>
           <h2 className="mt-6 text-3xl font-extrabold sm:text-4xl">
@@ -282,7 +282,7 @@ function Education() {
           </h2>
         </Reveal>
 
-        <div className="mt-14 grid gap-12 lg:grid-cols-[1fr_1.4fr]">
+        <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_1.4fr]">
           <Reveal>
             <h3 className="text-xs tracking-[0.28em] text-muted-foreground uppercase">
               Formação
@@ -320,7 +320,7 @@ function Audience() {
 
   return (
     <section id="para-quem" className="border-t border-border bg-surface">
-      <div className="mx-auto max-w-7xl px-5 py-24 lg:px-10 lg:py-32">
+      <div className="mx-auto max-w-7xl px-5 py-18 lg:px-10 lg:py-26">
         <Reveal className="max-w-3xl">
           <span className="section-label">Para quem é</span>
           <h2 className="mt-6 text-2xl leading-tight font-extrabold sm:text-4xl">
@@ -334,7 +334,7 @@ function Audience() {
           </p>
         </Reveal>
 
-        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {visible.map((cat, i) => (
             <Reveal key={cat.title} delay={i * 80}>
               <article className="card-surface h-full p-7">
@@ -364,7 +364,7 @@ function Audience() {
           </div>
         )}
 
-        <Reveal className="mt-14 border-l border-silver/50 pl-6">
+        <Reveal className="mt-10 border-l border-silver/50 pl-6">
           <p className="text-sm text-muted-foreground italic">
             Cada pessoa possui necessidades diferentes. A possibilidade e a forma de
             treinamento devem ser avaliadas individualmente.
@@ -390,15 +390,15 @@ function Services() {
   let counter = 0;
   return (
     <section id="servicos" className="border-t border-border">
-      <div className="mx-auto max-w-7xl px-5 py-24 lg:px-10 lg:py-32">
+      <div className="mx-auto max-w-7xl px-5 py-18 lg:px-10 lg:py-26">
         <Reveal className="max-w-3xl">
           <span className="section-label">Serviços</span>
-          <h2 className="mt-6 text-3xl leading-tight font-extrabold sm:text-4xl">
+          <h2 className="mt-5 text-3xl leading-tight font-extrabold sm:text-4xl">
             ENCONTRE O ACOMPANHAMENTO IDEAL PARA VOCÊ.
           </h2>
         </Reveal>
 
-        <div className="mt-16 space-y-16">
+        <div className="mt-12 space-y-12">
           {SERVICES.map((group) => (
             <div key={group.group}>
               <h3 className="text-xs tracking-[0.28em] text-muted-foreground uppercase">
