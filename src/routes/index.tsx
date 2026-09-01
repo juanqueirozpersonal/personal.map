@@ -102,13 +102,13 @@ function Index() {
 
 function Hero() {
   return (
-    <section id="inicio" className="relative overflow-hidden pt-28 lg:pt-20">
+    <section id="inicio" className="relative overflow-hidden pt-24 lg:pt-16">
       <div
         aria-hidden
         className="pointer-events-none absolute top-1/4 -right-40 h-[38rem] w-[38rem] rounded-full opacity-[0.07] blur-3xl"
         style={{ background: "radial-gradient(circle, #ffffff 0%, transparent 70%)" }}
       />
-      <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 pb-16 lg:min-h-screen lg:grid-cols-[45fr_55fr] lg:gap-6 lg:px-10 lg:pb-0">
+      <div className="mx-auto grid max-w-7xl items-center gap-8 px-5 pb-12 lg:min-h-screen lg:grid-cols-[45fr_55fr] lg:gap-6 lg:px-10 lg:pb-0">
         <Reveal className="order-2 lg:order-1">
           <div className="flex items-center gap-4">
             <img
@@ -202,15 +202,15 @@ function AuthorityBar() {
 
 function Impact() {
   return (
-    <section className="mx-auto max-w-5xl px-5 py-24 lg:px-10 lg:py-32">
+    <section className="mx-auto max-w-5xl px-5 py-16 lg:px-10 lg:py-24">
       <Reveal>
         <div className="hairline" />
-        <p className="mt-10 text-2xl leading-snug font-bold sm:text-4xl">
+        <p className="mt-8 text-2xl leading-snug font-bold sm:text-4xl">
           O EXERCÍCIO FÍSICO COMO FERRAMENTA PARA TRANSFORMAR SEU FUNCIONAMENTO DE{" "}
           <span className="text-silver">DENTRO PARA FORA</span>, PROMOVENDO SAÚDE,
           FUNCIONALIDADE E QUALIDADE DE VIDA.
         </p>
-        <div className="hairline mt-12" />
+        <div className="hairline mt-10" />
       </Reveal>
     </section>
   );
@@ -220,7 +220,7 @@ function Impact() {
 function About() {
   return (
     <section id="sobre" className="border-t border-border bg-surface">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-24 lg:grid-cols-2 lg:px-10 lg:py-32">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-18 lg:grid-cols-2 lg:px-10 lg:py-26">
         <Reveal>
           <span className="section-label">Sobre mim</span>
           <h2 className="mt-6 text-3xl leading-tight font-extrabold sm:text-4xl">
@@ -274,7 +274,7 @@ function About() {
 function Education() {
   return (
     <section className="border-t border-border">
-      <div className="mx-auto max-w-7xl px-5 py-24 lg:px-10 lg:py-28">
+      <div className="mx-auto max-w-7xl px-5 py-18 lg:px-10 lg:py-24">
         <Reveal>
           <span className="section-label">Formação e especializações</span>
           <h2 className="mt-6 text-3xl font-extrabold sm:text-4xl">
@@ -282,7 +282,7 @@ function Education() {
           </h2>
         </Reveal>
 
-        <div className="mt-14 grid gap-12 lg:grid-cols-[1fr_1.4fr]">
+        <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_1.4fr]">
           <Reveal>
             <h3 className="text-xs tracking-[0.28em] text-muted-foreground uppercase">
               Formação
@@ -320,7 +320,7 @@ function Audience() {
 
   return (
     <section id="para-quem" className="border-t border-border bg-surface">
-      <div className="mx-auto max-w-7xl px-5 py-24 lg:px-10 lg:py-32">
+      <div className="mx-auto max-w-7xl px-5 py-18 lg:px-10 lg:py-26">
         <Reveal className="max-w-3xl">
           <span className="section-label">Para quem é</span>
           <h2 className="mt-6 text-2xl leading-tight font-extrabold sm:text-4xl">
@@ -334,7 +334,7 @@ function Audience() {
           </p>
         </Reveal>
 
-        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {visible.map((cat, i) => (
             <Reveal key={cat.title} delay={i * 80}>
               <article className="card-surface h-full p-7">
@@ -364,7 +364,7 @@ function Audience() {
           </div>
         )}
 
-        <Reveal className="mt-14 border-l border-silver/50 pl-6">
+        <Reveal className="mt-10 border-l border-silver/50 pl-6">
           <p className="text-sm text-muted-foreground italic">
             Cada pessoa possui necessidades diferentes. A possibilidade e a forma de
             treinamento devem ser avaliadas individualmente.
@@ -390,15 +390,15 @@ function Services() {
   let counter = 0;
   return (
     <section id="servicos" className="border-t border-border">
-      <div className="mx-auto max-w-7xl px-5 py-24 lg:px-10 lg:py-32">
+      <div className="mx-auto max-w-7xl px-5 py-18 lg:px-10 lg:py-26">
         <Reveal className="max-w-3xl">
           <span className="section-label">Serviços</span>
-          <h2 className="mt-6 text-3xl leading-tight font-extrabold sm:text-4xl">
+          <h2 className="mt-5 text-3xl leading-tight font-extrabold sm:text-4xl">
             ENCONTRE O ACOMPANHAMENTO IDEAL PARA VOCÊ.
           </h2>
         </Reveal>
 
-        <div className="mt-16 space-y-16">
+        <div className="mt-12 space-y-12">
           {SERVICES.map((group) => (
             <div key={group.group}>
               <h3 className="text-xs tracking-[0.28em] text-muted-foreground uppercase">
@@ -441,15 +441,15 @@ function Services() {
 function HowItWorks() {
   return (
     <section id="como-funciona" className="border-t border-border bg-surface">
-      <div className="mx-auto max-w-7xl px-5 py-24 lg:px-10 lg:py-32">
+      <div className="mx-auto max-w-7xl px-5 py-18 lg:px-10 lg:py-26">
         <Reveal className="max-w-3xl">
           <span className="section-label">Como funciona</span>
-          <h2 className="mt-6 text-3xl font-extrabold sm:text-4xl">
+          <h2 className="mt-5 text-3xl font-extrabold sm:text-4xl">
             DO PRIMEIRO CONTATO À EVOLUÇÃO.
           </h2>
         </Reveal>
 
-        <div className="mt-12 grid gap-x-10 gap-y-4 sm:grid-cols-2 lg:mt-14">
+        <div className="mt-10 grid gap-x-8 gap-y-4 sm:grid-cols-2 lg:mt-12">
           {[STEPS.slice(0, 3), STEPS.slice(3)].map((group, gi) => (
             <ol key={gi} className="divide-y divide-border border-y border-border">
               {group.map((step, i) => (
@@ -482,29 +482,29 @@ function HowItWorks() {
 function Methodology() {
   return (
     <section id="metodologia" className="border-t border-border">
-      <div className="mx-auto max-w-7xl px-5 py-24 lg:px-10 lg:py-32">
+      <div className="mx-auto max-w-7xl px-5 py-18 lg:px-10 lg:py-26">
         <Reveal className="max-w-3xl">
           <span className="section-label">Metodologia</span>
-          <h2 className="mt-6 text-3xl leading-tight font-extrabold sm:text-4xl">
+          <h2 className="mt-5 text-3xl leading-tight font-extrabold sm:text-4xl">
             SEU TREINAMENTO NÃO DEVE SER <span className="text-silver-gradient">GENÉRICO.</span>
           </h2>
-          <p className="mt-6 text-sm leading-relaxed text-muted-foreground sm:text-base">
+          <p className="mt-5 text-sm leading-relaxed text-muted-foreground sm:text-base">
             Cada pessoa possui uma história, uma condição, uma rotina e necessidades
             diferentes. Por isso, o treinamento precisa ser pensado para a pessoa, e não a
             pessoa adaptada a um treino pronto.
           </p>
-          <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
             A prescrição do exercício deve considerar as características individuais, as
             necessidades, limitações, objetivos e realidade de cada pessoa.
           </p>
-          <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
             O exercício físico pode ser utilizado como uma ferramenta de saúde para
             promover mudanças de dentro para fora, contribuindo para a melhora da saúde,
             funcionalidade e qualidade de vida.
           </p>
         </Reveal>
 
-        <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {PILLARS.map((p, i) => (
             <Reveal key={p.n} delay={i * 80}>
               <article className="card-surface h-full p-7">
@@ -527,15 +527,15 @@ function Methodology() {
 function Testimonials() {
   return (
     <section id="depoimentos" className="border-t border-border">
-      <div className="mx-auto max-w-7xl px-5 py-24 lg:px-10 lg:py-28">
+      <div className="mx-auto max-w-7xl px-5 py-18 lg:px-10 lg:py-24">
         <Reveal className="max-w-3xl">
           <span className="section-label">Depoimentos</span>
-          <h2 className="mt-6 text-3xl font-extrabold sm:text-4xl">
+          <h2 className="mt-5 text-3xl font-extrabold sm:text-4xl">
             RESULTADOS QUE VÃO ALÉM DO ESPELHO.
           </h2>
         </Reveal>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {TESTIMONIALS.map((t, i) => (
             <Reveal key={i} delay={i * 80}>
               <figure className="flex h-full flex-col rounded-lg border border-border bg-surface p-3">
@@ -564,13 +564,13 @@ function Testimonials() {
 function Faq() {
   return (
     <section id="faq" className="border-t border-border bg-surface">
-      <div className="mx-auto max-w-4xl px-5 py-24 lg:px-10 lg:py-32">
+      <div className="mx-auto max-w-4xl px-5 py-18 lg:px-10 lg:py-26">
         <Reveal>
           <span className="section-label">FAQ</span>
-          <h2 className="mt-6 text-3xl font-extrabold sm:text-4xl">PERGUNTAS FREQUENTES</h2>
+          <h2 className="mt-5 text-3xl font-extrabold sm:text-4xl">PERGUNTAS FREQUENTES</h2>
         </Reveal>
 
-        <Reveal delay={100} className="mt-12">
+        <Reveal delay={100} className="mt-10">
           <Accordion type="single" collapsible className="w-full">
             {FAQ.map((item, i) => (
               <AccordionItem key={item.q} value={`item-${i}`} className="border-border">
@@ -599,7 +599,7 @@ function FinalCta() {
           background: "radial-gradient(circle at 50% 100%, #ffffff 0%, transparent 60%)",
         }}
       />
-      <div className="relative mx-auto max-w-4xl px-5 py-28 text-center lg:py-36">
+      <div className="relative mx-auto max-w-4xl px-5 py-20 text-center lg:py-28">
         <Reveal>
           <h2 className="text-4xl font-extrabold tracking-tight sm:text-6xl">
             QUERO MUDAR DE VIDA!
@@ -633,7 +633,7 @@ function Contact() {
 
   return (
     <section id="contato" className="border-t border-border bg-surface">
-      <div className="mx-auto grid max-w-7xl gap-14 px-5 py-24 lg:grid-cols-2 lg:px-10 lg:py-32">
+      <div className="mx-auto grid max-w-7xl gap-12 px-5 py-18 lg:grid-cols-2 lg:px-10 lg:py-26">
         <Reveal>
           <span className="section-label">Contato</span>
           <h2 className="mt-6 text-3xl font-extrabold sm:text-4xl">VAMOS CONVERSAR?</h2>
