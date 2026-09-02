@@ -2,8 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Instagram, MessageCircle, Plus } from "lucide-react";
 import { useState } from "react";
 
-import juan from "@/assets/juan-queiroz.png.asset.json";
-import logo from "@/assets/pemap-logo.jpg.asset.json";
+import juan from "@/assets/juan queiroz.jpeg";
+import logo from "@/assets/pemap logo.jpeg";
 import { Footer } from "@/components/pemap/Footer";
 import { Header } from "@/components/pemap/Header";
 import { Reveal } from "@/components/pemap/Reveal";
@@ -112,7 +112,7 @@ function Hero() {
         <Reveal className="order-2 lg:order-1">
           <div className="flex items-center gap-4">
             <img
-              src={logo.url}
+              src={logo}
               alt="Logo oficial PEMAP"
               className="h-14 w-14 object-contain"
               width={56}
@@ -167,7 +167,7 @@ function Hero() {
         <div className="relative order-1 lg:order-2 lg:h-screen">
           <div className="relative h-full">
             <img
-              src={juan.url}
+              src={juan}
               alt="Juan Queiroz, personal trainer, de braços cruzados em fundo preto"
               className="mx-auto h-[16.5rem] w-auto object-contain object-bottom contrast-[1.08] brightness-[0.98] sm:h-[30rem] lg:h-full lg:max-h-screen lg:w-full"
               width={1078}
@@ -253,7 +253,7 @@ function About() {
         <Reveal delay={120} className="relative">
           <div className="relative overflow-hidden rounded-lg border border-border bg-background">
             <img
-              src={juan.url}
+              src={juan}
               alt="Retrato profissional de Juan Queiroz, personal trainer"
               className="h-full w-full object-cover contrast-[1.06]"
               width={1078}
@@ -541,7 +541,7 @@ function Testimonials() {
               <figure className="flex h-full flex-col rounded-lg border border-border bg-surface p-3">
                 <div className="overflow-hidden rounded-md border border-border bg-background">
                   <img
-                    src={t.image.url}
+                    src={t.image}
                     alt={`Depoimento de ${t.author}`}
                     className="w-full object-contain"
                     loading="lazy"

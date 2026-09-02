@@ -1,4 +1,4 @@
-import logo from "@/assets/pemap-logo.jpg.asset.json";
+import logo from "@/assets/pemap logo.jpeg";
 import {
   CREF,
   EMAIL,
@@ -15,7 +15,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-3 lg:px-10">
         <div>
           <img
-            src={logo.url}
+            src={logo}
             alt="Logo oficial PEMAP"
             className="h-20 w-20 object-contain"
             width={80}

@@ -231,11 +231,11 @@ export const FAQ = [
   },
 ];
 
-import testimonial1 from "@/assets/photo-output.jpeg.asset.json";
-import testimonial2 from "@/assets/photo-output-2.jpeg.asset.json";
-import testimonial3 from "@/assets/photo-output-3.jpeg.asset.json";
-import testimonial4 from "@/assets/photo-output.png.asset.json";
-import testimonial5 from "@/assets/photo-output-5.jpeg.asset.json";
+import testimonial1 from "@/assets/depoimento 1.jpeg";
+import testimonial2 from "@/assets/depoimento 2.jpeg";
+import testimonial3 from "@/assets/depoimento 3.jpeg";
+import testimonial4 from "@/assets/depoimento 4.png";
+import testimonial5 from "@/assets/depoimento 5.jpeg";
 
 export const TESTIMONIALS = [
   {

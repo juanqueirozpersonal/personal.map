@@ -1,7 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
-import logo from "@/assets/pemap-logo.jpg.asset.json";
+import logo from "@/assets/pemap logo.jpeg";
 import { NAV, WHATSAPP_URL } from "@/lib/pemap";
 import { cn } from "@/lib/utils";
 
@@ -39,7 +39,7 @@ export function Header() {
           aria-label="PEMAP — início"
         >
           <img
-            src={logo.url}
+            src={logo}
             alt="Logo oficial PEMAP"
             className="h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11 lg:h-12 lg:w-12"
             width={48}
