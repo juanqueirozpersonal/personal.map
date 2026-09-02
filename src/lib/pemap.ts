@@ -58,7 +58,7 @@ export const AUDIENCE = [
   },
   {
     title: "Diferentes fases da vida",
-    items: ["Crianças", "Adolescentes", "Gestantes", "Pós-parto", "Idosos"],
+    items: ["Crianças", "Adolescentes", "Gestantes", "Pós-parto", "Menopausa", "Idosos"],
   },
   {
     title: "Outras condições de saúde",
@@ -66,6 +66,9 @@ export const AUDIENCE = [
       "Câncer",
       "Ansiedade",
       "Depressão",
+      "Lipedema",
+      "Endometriose",
+      "Síndrome do ovário policístico",
       "Outras condições que exigem individualização",
     ],
   },
